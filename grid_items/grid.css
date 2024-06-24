@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: min(100%, 50rem);
+    font-family: 'Times New Roman', Times, serif;
+    gap: 1rem;
+}
+
+.grid_col_span_2 {
+    grid-column: span 2;
+}
+
+.one {
+    display: grid;
+    background-color: blueviolet;
+    padding: 1.5rem;
+}
+.two {
+    display: grid;
+    background-color: whitesmoke;
+    color: black;
+    padding: 1.5rem;
+}
+
+.three {
+    display: grid;
+    background-color: #383636;
+    padding: 1.5rem;
+}
+
+.four {
+    display: grid;
+    background-color: rgb(109, 50, 50);
+    padding: 1.5rem;
+}
+
+.five {
+    display: grid;
+    background-color: black;
+    padding: 1.5rem;
+    grid-row: 1/ 3;
+    grid-column-start: 4;
+}
+
