@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+/* End Reset */
+
+
+/* Begin utility classes */ 
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+/* Begin utility classes */ 
+
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  
+  
+  background-image: url(./img/bubbles.png), linear-gradient(to left, steelblue, white);
+  background-repeat: repeat-y, no-repeat; /*Repeat-y value applies to the bubble image while no-repeat value applies to the gradient image*/ 
+  background-position: right, center; /*right value applies to the bubble image while center value applies to the gradient image*/ 
+  background-size: 20%, auto; /*20% value applies to the bubble image(i.e the buble image should cover 20% of the body element. while auto value applies to the gradient image*/ 
+}
+
+.container {
+  background-color: rgb(251, 210, 156); /*this is literally set as a fall-back in case anything goes wrong*/
+  background-image: url(./img/map-2176x1451.png);
+  background-repeat: repeat; /*this in most cases is applicable to small images whose original width is less to the width or the size of the the ontainer to be filled up*/
+  background-size: cover; /*applicable to images that has war more width and pixels more than the content or the container*/
+  background-position: center;
+}
+
+
+.hero {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  
+  background-color: hsla(0, 0%, 100%, 0.35);
+}
+
+.h1 {
+  font-size: 500%;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px #000000;
+  
+  /*========transparent background colour for a text=======*/
+  /* background-color: hsla(0, 0%, 0%, 0.397);
+  padding: 0.5rem;
+  border-radius: 10px; */
+  /* ===================================================== */
+}
+
+
+.figure-profile-picture {
+  width: 35%;
+}
+
+.figure-profile-picture img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+.example img {
+  width: 25%;
+  height: auto;
+}
+
