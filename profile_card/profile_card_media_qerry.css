@@ -1,0 +1,72 @@
+/* SMALL BREAK-POINT */
+@media screen and (min-width: 576px) {
+    main {
+        /* background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold); */
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min(100%, 400px);
+    }
+
+    .card:last-child {
+        order: -1;
+    }
+}
+
+/* MEDIUM BREAK-POINT */
+@media screen and (min-width: 768px) {
+    nav {
+        display: none;
+    }
+    main {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+    .card {
+        width: min(100%, 325px);
+    }
+
+    .card figure {
+        flex-direction: column-reverse;
+
+    }
+
+    .card figcaption {
+        margin: 0.1em;
+    }
+    .card p {
+        margin: 1rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 992px) {
+    main {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+
+    }
+
+    .card {
+        width: min (100%, 400px);
+    }
+}
+
+/*MOBILE_LANDSCAPE*/
+/* @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple;);
+    }
+
+    nav {
+        display: none;
+    }
+} */
+
